@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom"
-import miLogo from "../../../assets/iconicon.png"
+import { NavLink } from "react-router-dom";
+import miLogo from "../../../assets/iconicon.png";
 
 export const Cabecera = () => {
     return (
@@ -28,9 +28,14 @@ export const Cabecera = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/*">
-                  Franquicias
-                </NavLink>
+                <a
+                  className="nav-link"
+                  href="https://open.spotify.com/playlist/71vKOrfq8BbxpcojmfzYXY?si=mGONpOVNTU205P4SD3Iu3g"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nuestra Playlist
+                </a>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -49,20 +54,12 @@ export const Cabecera = () => {
                 >
                   <li>
                     <NavLink className="dropdown-item" to="/mencre">
-                      Registrar menus
+                      Biblioteca
                     </NavLink>
                   </li>
                   <li>
                     <NavLink className="dropdown-item" to="/menlis">
-                      Listar menus
-                    </NavLink>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="/menadmin">
-                      Administrar menu
+                      Explorar otras playlist
                     </NavLink>
                   </li>
                 </ul>
@@ -79,4 +76,3 @@ export const Cabecera = () => {
     </>
     );
 };
-
